@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
 body{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+   background-color: #A6A6A6;
 }
+/*nav-bar*/
 .nav{
     display: flex;
     justify-content: space-between;
     background-color: #0D0D0D;
     height: 19vh;
+    
 }
 .navbar{
     display: flex;
@@ -39,6 +44,8 @@ a{
     height: 25vh;
     margin-left: 30px;
 }
+/*Fin nav-bar*/
+/*Section Hero*/
 .hero{
     width: 100%;
     height: 100vh;
@@ -59,6 +66,28 @@ a{
     text-align: center;
     padding: 0 15px;
 }
+.hero h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: clamp(4vw,6vw ,8vw );
+    color:#0D0D0D;
+    
+}
+.hero h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    font-style: normal;
+    font-weight:normal;
+    color:#0D0D0D;
+}
+.hero h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight:bold;
+    color:#0D0D0D;
+}
 
 @media(min-width:1024px){
     .hero{
@@ -69,4 +98,52 @@ a{
     .hero{
         height: 150vh;
     }
+}
+/*Fin section hero*/
+/*Que son*/
+.bd-container h2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 5%;
+}
+.definiciones{
+    display: flex;
+    
+    justify-content: space-between;
+}
+.react h3{
+    display: flex;
+    justify-content: center ;
+    text-shadow: 2px 2px 2px rgb(0, 140, 255);
+
+}
+.react p{
+    display:flex;
+    justify-content: center;
+    text-align:justify;
+    padding: 10px;
+    margin: 10px;
+}
+.angular h3{
+    display: flex;
+    justify-content: center;
+}
+.angular p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+.vue h3{
+    display: flex;
+    justify-content: center;
+}
+.vue p{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
 }
