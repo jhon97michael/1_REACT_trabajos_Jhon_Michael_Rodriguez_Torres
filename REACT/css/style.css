@@ -20,13 +20,13 @@ body{
     display: flex;
     
 }
-ul{
+.navbar ul{
     display: flex;
     list-style: none;
     margin-top: 1rem;
     padding-right: 100vp;
 }
-li{
+.navbar li{
     padding: 10px;
     margin: 5px;
     
@@ -147,3 +147,24 @@ a{
     padding: 10px;
     margin: 10px;
 }
+/*Fin QUE SON*/
+/*Inicio de semejanzas*/
+.container-semejanzas h2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 5%;
+}
+.semejanzas{
+    display: flex;
+    justify-content: space-between;
+}
+.angular-semejanzas ul{
+    display: block;
+    padding-left: 10%;
+}
+.angular-semejanzas li{
+    padding: 2%;
+    list-style:url();
+}
+/*Fin de semejanzas*/
