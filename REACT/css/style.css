@@ -165,6 +165,19 @@ a{
 }
 .angular-semejanzas li{
     padding: 2%;
-    list-style:url();
+}
+.react-semejanzas ul{
+    display: block;
+    padding-left: 10%;
+}
+.react-semejanzas li{
+    padding: 2%;
+}
+.vue-semejanzas ul{
+    display: block;
+    padding-left: 10%;
+}
+.vue-semejanzas li{
+    padding: 2%;
 }
 /*Fin de semejanzas*/
