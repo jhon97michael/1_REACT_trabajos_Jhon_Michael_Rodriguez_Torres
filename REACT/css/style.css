@@ -181,3 +181,27 @@ a{
     padding: 2%;
 }
 /*Fin de semejanzas*/
+/*inicio de diferencias*/
+.container-diferencias h2{
+    display:flex ;
+    justify-content :center;
+    padding: 3%;
+    margin: 10px;
+}
+.diferencias{
+    display: flex;
+}
+.angular-diferencias ul{
+    display: block;
+    padding-left: 15%;
+    background-color: aqua;
+}
+.angular-diferencias li{
+
+}
+.react-diferencias ul{
+    display:block;
+    padding-left:  8%;
+    background-color:#f4a96c;
+}
+/*Fin diferencias*/
