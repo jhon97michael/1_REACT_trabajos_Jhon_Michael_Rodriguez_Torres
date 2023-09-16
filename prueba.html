@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de evento onblur</title>
+</head>
+<body>
+    <input type="text" id="miInput" onblur="validarInput()">
+    <p id="mensaje"></p>
+
+    <script>
+        function validarInput() {
+            const input = document.getElementById("miInput");
+            const mensaje = document.getElementById("mensaje");
+
+            if (input.value === "") {
+                mensaje.textContent = "Este campo no debe estar vacío.";
+            } else {
+                mensaje.textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>
