@@ -1,0 +1,38 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Poppins&family=Titillium+Web:wght@300&display=swap');
+
+
+.contenedor1{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    
+}
+
+.contenedor-logo{
+    width: 16vh;
+    padding: 10px;
+    margin: auto;
+    margin-left: 5vh;
+}
+.img{
+    width: 100px;
+}
+.nav-link{
+    display: flex;    
+}
+.nav-link ul{
+    display: flex;
+    margin: auto;   
+}
+.nav-link li{
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+}
+.nav-link a{
+    color: #fff;
+    text-decoration: none;
+    justify-items: center;
+    font-weight: bold;   
+}
