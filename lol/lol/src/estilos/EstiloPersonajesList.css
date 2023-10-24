@@ -1,0 +1,26 @@
+/*Contenedor principal*/
+.contenedorlist{
+    max-width: 20rem;
+    margin: 0 auto;
+}
+.contenedorinterno{
+    background-color: #b3b3b3;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*Imagen*/
+.fotoPersonaje{
+    object-fit: cover;
+    width: 100%;
+    height: 12rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+/*Texto*/
+.ParrafoPersonaje{
+    font-size: 1rem;
+    color: #111827;
+    text-align: justify;
+    padding: .5rem;
+}

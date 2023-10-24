@@ -1,0 +1,24 @@
+/*Contenedor principal*/
+.contenedor{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+}/*Fin contenedor principal*/
+/*Imagen logo*/
+.imagen-logo{
+    width: 13%;
+    margin-left: 15px;
+}/*Fin imagen logo*/
+/*Nav link*/
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding: 20px;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
