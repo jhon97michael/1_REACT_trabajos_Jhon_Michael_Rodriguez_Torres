@@ -3,6 +3,7 @@ import './App.css';
 import HeaderNav from './componentes/HeaderNav';
 import PersonajesList from './componentes/PersonajesList';
 import Hero from './componentes/Hero';
+import Footer from './componentes/Footer';
 
 
 function App() {
@@ -43,9 +44,30 @@ function App() {
       descripcionPersonaje = 'Es una mujer alegre y segura de sí que siempre porta una sonrisa inquietante. Sus duelos con las desenfrenadas serpientes marinas desafían los límites de la habilidad humana: corre sobre la superficie del mar abierto con una espada látigo hecha de agua prismática y brillante para trepar sobre las grandes bestias y asesinarlas de forma radical, deteniéndose solo para agradecerles a sus dignos enemigos por su esfuerzo. '
       />
       </div>
-
-     
-      
+      <div className='cards'>
+        <PersonajesList
+          tituloPersonaje = 'Seraphine'
+          imagenPersonaje ='Seraphine'
+          descripcionPersonaje='Nacida en Piltóver de padres zaunitas, Seraphine es capaz de escuchar las almas de otros; el mundo canta para ella, y ella canta para él. Aunque estos sonidos la abrumaban en su juventud, ahora acude a ellos para inspirarse y convertir el caos en una sinfonía. Se presenta en las ciudades hermanas para recordarles a sus ciudadanos que no están solos, que son más fuertes juntos y que, ante sus ojos, su potencial es ilimitado.'
+        />
+        <PersonajesList 
+          tituloPersonaje ='Tristana'
+          imagenPersonaje ='Tristana'
+          descripcionPersonaje='Como la mayoría de yordles, Tristana sentía una absoluta fascinación por el mundo más allá de Ciudad de Bandle. Durante sus viajes, recorrió con entusiasmo lugares muy distintos, hizo muchos amigos y se encontró con criaturas muy peculiares. Usando los senderos ocultos que solo los yordles conocen, exploró el reino material a lo largo y a lo ancho, casi siempre pasando desapercibida.'
+        />
+        <PersonajesList 
+          tituloPersonaje='Akali'
+          imagenPersonaje='Akali'
+          descripcionPersonaje='Akali era una muchacha precoz y absorbía todo el conocimiento como una esponja. A todo el mundo le quedó claro que seguiría el mismo camino que sus padres. Junto a Shen, el hijo y sucesor del gran maestro, lideraría a la nueva generación dedicada a conservar el equilibrio de Jonia. Jonia siempre ha sido una tierra de magia salvaje, habitada por gente llena de energía y con espíritu que busca convivir en armonía.'
+        />
+          <PersonajesList 
+        tituloPersonaje='Garen'
+        imagenPersonaje='garen'
+        descripcionPersonaje='Nacido en la noble familia Guardia de la Corona, junto con su hermana menor Lux, Garen supo desde temprana edad que se esperaba que él defendiera el trono de Demacia con su vida. Su padre, Pieter, era un oficial militar condecorado, mientras que su tía Tianna era la Capitana de la espada de la Vanguardia Valerosa, una fuerza militar de élite; ambos fueron reconocidos y muy respetados por el rey Jarvan III.'
+      />
+      </div>
+    
+      <Footer />
 
     </div>
   );
