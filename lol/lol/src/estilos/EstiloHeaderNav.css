@@ -6,7 +6,7 @@
 }/*Fin contenedor principal*/
 /*Imagen logo*/
 .imagen-logo{
-    width: 13%;
+    height: 70px;
     margin-left: 15px;
 }/*Fin imagen logo*/
 /*Nav link*/
@@ -15,8 +15,8 @@ ul{
     display: flex;
 }
 li{
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 15px;
 }
 a{
     text-decoration: none;
