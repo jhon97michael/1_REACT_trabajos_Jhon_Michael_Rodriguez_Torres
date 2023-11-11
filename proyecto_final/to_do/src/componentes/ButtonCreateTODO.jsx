@@ -3,7 +3,9 @@ import React from 'react';
 
 function ButtonCreateTODO(){
     return (
-        <button>+</button>
+        <button className='CreateButtonTodo' onClick={
+            (event) => console.log("Le diste click")
+        }>+</button>
     );
 }
 

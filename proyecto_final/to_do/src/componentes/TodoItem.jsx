@@ -1,10 +1,10 @@
 import React from "react";
 
-function TodoItem(){
+function TodoItem(props){
     return (
       <li>
         <spam>V</spam>
-        <p>Llorar con la llorona</p>
+        <p>{props.text}</p>
         <spam>X</spam>
       </li>
     );

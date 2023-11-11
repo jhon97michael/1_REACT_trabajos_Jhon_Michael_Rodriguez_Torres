@@ -7,7 +7,11 @@ import TodoList from './componentes/TodoList';
 import { ButtonCreateTODO } from './componentes/ButtonCreateTODO';
 
 const defaultTODOS = [
-  {text: "Cortar Cebolla", completed: false}
+  {text: "Cortar Cebolla", completed: true},
+  {text: "Terminar el curso", completed: false},
+  {text: "Llorar con la llorona", completed: false},
+  {text: "LALALALAL", completed: false}
+
 ]
 
 function App() {
@@ -21,9 +25,12 @@ function App() {
       <TodoSearch /> 
 
       <TodoList>
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        {defaultTODOS.map(todo =>(
+          <TodoItem key={todo.text}
+          text={todo.text}
+          completed={todo.completed} />
+        ))}
+        
       </TodoList>
 
     <ButtonCreateTODO />
