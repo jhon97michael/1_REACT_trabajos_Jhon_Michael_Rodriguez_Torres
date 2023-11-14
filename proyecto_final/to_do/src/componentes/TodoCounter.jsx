@@ -1,4 +1,5 @@
 import React from "react";
+import '../Estilos/TodoCounter.css'
 
 
 function TodoCounter({total, completed}){
@@ -6,10 +7,10 @@ function TodoCounter({total, completed}){
 
     return (
         <div>
-            <h1>
-                Has completado {completed} de {total} TAREAS
+            <h1 className="TodoCounter">
+                Has completado <span>{completed}</span> de <span>{total}</span> TAREAS
             </h1>
         </div>
     );
 }
-export default TodoCounter;
+export {TodoCounter} ;

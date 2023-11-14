@@ -1,14 +1,13 @@
 import React from "react";
+import '../Estilos/TodoSearch.css'
 
-function TodoSearch(){
-
-    const [searchValue, setsearchValue] = React.useState('');
-
-    console.log('Los usuarios buscan todos de ' + searchValue);
-
+function TodoSearch({
+    searchValue,
+    setsearchValue
+}){
     return (
 
-        <input
+        <input className="TodoSearch"
         type="text" 
         placeholder="Search" 
         value={searchValue}
@@ -23,4 +22,4 @@ function TodoSearch(){
     );
 }
 
-export default TodoSearch;
+export  {TodoSearch};

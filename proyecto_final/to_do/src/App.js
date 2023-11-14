@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import TodoItem from './componentes/TodoItem';
-import TodoCounter from './componentes/TodoCounter';
-import TodoSearch from './componentes/TodoSearch';
-import TodoList from './componentes/TodoList';
+import {TodoItem} from './componentes/TodoItem';
+import {TodoCounter} from './componentes/TodoCounter';
+import {TodoSearch} from './componentes/TodoSearch';
+import {TodoList} from './componentes/TodoList';
 import { ButtonCreateTODO } from './componentes/ButtonCreateTODO';
+import React from 'react';
 
 const defaultTODOS = [
   {text: "Cortar Cebolla", completed: true},
@@ -15,27 +16,69 @@ const defaultTODOS = [
 ]
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTODOS);
+  const [searchValue, setsearchValue] = React.useState('');
+
+  const completedTodos =todos.filter(todo => !!todo.completed).length;
+  const totalTodos = todos.length;
+
+  const searchedTodos = todos.filter(
+    (todo) => {
+      const todoText = todo.text.toLowerCase();
+      const searchText = searchValue.toLowerCase();
+
+
+      return todoText.includes(searchText);
+    }
+  );
+
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+    newTodos[todoIndex].completed = true
+    setTodos(newTodos);
+  }  
+
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+    newTodos.splice(todoIndex, 1);
+    setTodos(newTodos);
+  }  
+
   return (
-    <div className="App">
+    <>
 
       <TodoCounter
-        completed={16}
-        total={25} 
+        completed={completedTodos}
+        total={totalTodos} 
       />
-      <TodoSearch /> 
+      <TodoSearch 
+        searchValue={searchValue}
+        setsearchValue={setsearchValue}
+      /> 
 
       <TodoList>
-        {defaultTODOS.map(todo =>(
-          <TodoItem key={todo.text}
+        {searchedTodos.map(todo =>(
+          <TodoItem 
+          key={todo.text}
           text={todo.text}
-          completed={todo.completed} />
+          completed={todo.completed} 
+          onCompleted={() => completeTodo(todo.text)}
+          onDelete = {() => deleteTodo(todo.text)}
+          />
         ))}
         
       </TodoList>
 
     <ButtonCreateTODO />
 
-    </div>
+    </>
   );
 }
 

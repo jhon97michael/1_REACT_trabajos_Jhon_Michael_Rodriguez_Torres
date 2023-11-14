@@ -1,10 +1,11 @@
 import React from "react";
+import '../Estilos/TodoList.css'
 
 function TodoList(props){
     return (
-        <ul>
+        <ul className="TodoList">
             {props.children}
         </ul>
     );
 }
-export default TodoList;
+export  {TodoList};
