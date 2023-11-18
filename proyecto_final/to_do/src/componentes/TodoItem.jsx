@@ -1,5 +1,8 @@
 import React from "react";
 import '../Estilos/TodoItem.css'
+import { CompletedIcon} from '../Estilos/CompletedIcon.js';
+import { DeleteIcon} from '../Estilos/DeleteIcon.js';
+
 
 function TodoItem(props){
     return (
