@@ -4,6 +4,8 @@ import HeaderNav from './componentes/HeaderNav';
 import PersonajesList from './componentes/PersonajesList';
 import Hero from './componentes/Hero';
 import Footer from './componentes/Footer';
+import BotonCounter from './componentes/BotonCounter';
+import Text from './componentes/Text';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       imagenPersonaje = 'kaisa'
       descripcionPersonaje = "Kai'sa cuyo nombre real es Kaisa'a, es una joven valiente que vivía en Icathia, una ciudad que fue devastada por el Vacío, una entidad corrupta y aterradora. Durante el ataque del Vacío, su madre la rescató, pero para salvarla, tuvo que usar una tecnología experimental que fusionó el cuerpo de Kai'Sa con una entidad del Vacío. Esto le otorgó habilidades sobrenaturales y la capacidad de resistir la corrupción del Vacío."
       />
+
+     
 
       <PersonajesList 
         tituloPersonaje ='Miss Fortune'
@@ -59,13 +63,22 @@ function App() {
           tituloPersonaje='Akali'
           imagenPersonaje='Akali'
           descripcionPersonaje='Akali era una muchacha precoz y absorbía todo el conocimiento como una esponja. A todo el mundo le quedó claro que seguiría el mismo camino que sus padres. Junto a Shen, el hijo y sucesor del gran maestro, lideraría a la nueva generación dedicada a conservar el equilibrio de Jonia. Jonia siempre ha sido una tierra de magia salvaje, habitada por gente llena de energía y con espíritu que busca convivir en armonía.'
+          
         />
           <PersonajesList 
         tituloPersonaje='Garen'
         imagenPersonaje='garen'
         descripcionPersonaje='Nacido en la noble familia Guardia de la Corona, junto con su hermana menor Lux, Garen supo desde temprana edad que se esperaba que él defendiera el trono de Demacia con su vida. Su padre, Pieter, era un oficial militar condecorado, mientras que su tía Tianna era la Capitana de la espada de la Vanguardia Valerosa, una fuerza militar de élite; ambos fueron reconocidos y muy respetados por el rey Jarvan III.'
+       
       />
       </div>
+      
+      <BotonCounter 
+        botonSumar = "Sumar"
+        botonRestar = "Restar"
+      /> 
+
+      <Text />
     
       <Footer />
 

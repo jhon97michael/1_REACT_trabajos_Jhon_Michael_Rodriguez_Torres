@@ -11,6 +11,7 @@ function PersonajesList(props){
                 <p className='ParrafoPersonaje'>{props.descripcionPersonaje}</p>
             
         </div>
+        
     </div>     
     );
 }export default PersonajesList;
