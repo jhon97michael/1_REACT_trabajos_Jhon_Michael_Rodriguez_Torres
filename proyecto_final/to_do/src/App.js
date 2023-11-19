@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {TodoItem} from './componentes/TodoItem';
 import {TodoCounter} from './componentes/TodoCounter';

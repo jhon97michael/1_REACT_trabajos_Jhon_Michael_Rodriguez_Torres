@@ -3,13 +3,14 @@ import TodoICon from '../componentes/TodoIcon';
 
 
 
-function DeleteIcon(){
+function DeleteIcon({ onDelete }){
     return (
         <TodoICon 
         type="delete"
         color="gray"
+        onClick={onDelete}
         />
-    );
+    ); 
 }
 
 export { DeleteIcon };
