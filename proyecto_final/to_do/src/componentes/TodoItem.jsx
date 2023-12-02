@@ -1,6 +1,6 @@
 import React from "react";
 import '../Estilos/TodoItem.css'
-import { CompletedIcon} from '../Estilos/CompletedIcon.js';
+import { CompleteIcon} from '../Estilos/CompleteIcon.js';
 import { DeleteIcon} from '../Estilos/DeleteIcon.js';
 
 
@@ -8,7 +8,7 @@ function TodoItem(props){
     return (
       <li className="TodoItem">
 
-        <CompletedIcon 
+        <CompleteIcon 
         completed={props.completed}
         onComplete={props.onComplete}
         />
